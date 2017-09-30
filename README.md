@@ -1,5 +1,5 @@
 # roman_to_integer_conversion
-Converts Roman numeral into Integer.
+Converts Roman numeral into Integer
 Thats the problemstatement for code:
 Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
 
