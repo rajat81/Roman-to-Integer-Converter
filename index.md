@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+#roman_to_integer_conversion
 
-You can use the [editor on GitHub](https://github.com/rajat81/roman_to_integer_conversion/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Converts Roman numeral into Integer Thats the problemstatement for code: Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Recall the following mapping of characters to values:
 
-### Markdown
+I --> 1 V --> 5 X --> 10 L --> 50 C --> 100 D --> 500 M --> 1000
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+If symbols progress from largest to smallest left to right, their values are simply summed. However, if a smaller value symbol is found to the left of a larger value symbol, then the value of the smaller symbol is subtracted from that of the larger symbol.
 
-```markdown
-Syntax highlighted code block
+For example, if a user inputs:
 
-# Header 1
-## Header 2
-### Header 3
+IX, your program should print 9
+MDCXXXVI, your program should print 1636
+XCIX, your program should print 99
 
-- Bulleted
-- List
+You may include additional header files as needed, and you may call any functions you'd like.
 
-1. Numbered
-2. List
+Odds are you'll find get_string and printf of interest!
 
-**Bold** and _Italic_ and `Code` text
+##Input Format
 
-[Link](url) and ![Image](src)
-```
+A single string R representing a valid Roman numeral.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+##Constraints
 
-### Jekyll Themes
+Each character of R will be either I, V, X, L, C, D, or M.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rajat81/roman_to_integer_conversion/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+R will represent a valid Roman numeral.
 
-### Support or Contact
+##Output Format
 
+An integer representing the corresponding number in base 10.
+
+##Sample Input
+
+IX
+
+##Sample Output
+
+9
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
