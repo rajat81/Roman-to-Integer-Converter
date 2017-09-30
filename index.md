@@ -1,6 +1,6 @@
 # Roman to Integer converter using C
 
-The following is the problem statement for the code that you will find ## at the GitHub view.
+The following is the problem statement for the code that you will find IN THE GITHUB VIEW.
 
 Converts Roman numeral into Integer Thats the problemstatement for code: Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
 
@@ -42,4 +42,4 @@ An integer representing the corresponding number in base 10.
 
 `9`
 
-Find the code in GitHub view in ## code section
+Find the code in GitHub view in CODE section
