@@ -1,37 +1,104 @@
-## Welcome to GitHub Pages
+## Roman to Integer converter using C
+[Image](https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjiwZPr183WAhVBN48KHc-UABwQjRwIBw&url=https%3A%2F%2Ffossbytes.com%2Fwhat-is-programming-and-why-you-should-learn-to-code%2F&psig=AOvVaw3Z1nH4zGgeApfIjWApCNBv&ust=1506887570663491)
+The following is the problem statement for the code that you will find at the end of this page.
 
-You can use the [editor on GitHub](https://github.com/rajat81/roman_to_integer_conversion/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Converts Roman numeral into Integer Thats the problemstatement for code: Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Recall the following mapping of characters to values:
 
-### Markdown
+`I –> 1 V –> 5 X –> 10 L –> 50 C –> 100 D –> 500 M –> 1000`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+If symbols progress from largest to smallest left to right, their values are simply summed. However, if a smaller value symbol is found to the left of a larger value symbol, then the value of the smaller symbol is subtracted from that of the larger symbol.
 
-```markdown
-Syntax highlighted code block
+For example, if a user inputs:
 
-# Header 1
-## Header 2
-### Header 3
+`IX, your program should print 9
+MDCXXXVI, your program should print 1636
+XCIX, your program should print 99  `
 
-- Bulleted
-- List
+You may include additional header files as needed, and you may call any functions you’d like.
 
-1. Numbered
-2. List
+Odds are you’ll find get_string and printf of interest!
 
-**Bold** and _Italic_ and `Code` text
+# Input Format
 
-[Link](url) and ![Image](src)
-```
+A single string R representing a valid Roman numeral.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Constraints
 
-### Jekyll Themes
+Each character of R will be either I, V, X, L, C, D, or M.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rajat81/roman_to_integer_conversion/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+R will represent a valid Roman numeral.
 
-### Support or Contact
+# Output Format
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+An integer representing the corresponding number in base 10.
+
+# Sample Input
+
+`IX`
+
+# Sample Output
+
+`9`
+## Code:
+`
+#include <cs50.h>
+#include <string.h>
+#include <stdio.h>
+int digit(char);
+int main(void)
+{
+   
+    int i,numb=0,p=0;
+   string s=get_string();     //taking input
+    int n=strlen(s);
+    int number[n];
+    number[n]=0;
+    for(i=0;i<n;i++)
+        {number[i]=digit(s[i]);
+         
+        
+    }
+   for(i=0;i<n;i++)
+       {if(number[i]>=number[i+1])
+       p=p+number[i];
+       else if(number[i]<number[i+1])
+       p=p-number[i];
+      }
+    printf("%d",p);
+    return 0;
+}
+
+
+//function
+int digit(char c)
+{
+    int value = 0;
+    switch (c)
+    {
+    case 'I':
+        value = 1;
+        break;
+    case 'V':
+        value = 5;
+        break;
+    case 'X':
+        value = 10;
+        break;
+    case 'L':
+        value = 50;
+        break;
+    case 'C':
+        value = 100;
+        break;
+    case 'D':
+        value = 500;
+        break;
+    case 'M':
+        value = 1000;
+        break;
+       
+    }
+     return value;
+}`
