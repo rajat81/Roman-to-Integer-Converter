@@ -51,7 +51,7 @@ int main(void)
 {
    
     int i,numb=0,p=0;
-   string s=get_string();     //taking input
+   string s=get_string();     
     int n=strlen(s);
     int number[n];
     number[n]=0;
@@ -71,7 +71,7 @@ int main(void)
 }
 
 
-//function
+
 int digit(char c)
 {
     int value = 0;
