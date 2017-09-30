@@ -1,5 +1,5 @@
-## Roman to Integer converter using C
-[Image](https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjiwZPr183WAhVBN48KHc-UABwQjRwIBw&url=https%3A%2F%2Ffossbytes.com%2Fwhat-is-programming-and-why-you-should-learn-to-code%2F&psig=AOvVaw3Z1nH4zGgeApfIjWApCNBv&ust=1506887570663491)
+# Roman to Integer converter using C
+
 The following is the problem statement for the code that you will find at the end of this page.
 
 Converts Roman numeral into Integer Thats the problemstatement for code: Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
