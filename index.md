@@ -1,6 +1,6 @@
 # Roman to Integer converter using C
 
-The following is the problem statement for the code that you will find at the end of this page.
+The following is the problem statement for the code that you will find ### at the GitHub view.
 
 Converts Roman numeral into Integer Thats the problemstatement for code: Write a program that, given a Roman numeral as a string R, prints via standard output the integer value of that numeral.
 
@@ -41,57 +41,4 @@ An integer representing the corresponding number in base 10.
 # Sample Output
 
 `9`
-## Code:
-
-`````#include <cs50.h>
-#include <string.h>
-#include <stdio.h>
-int digit(char);
-int main(void)
-{
-    int i,numb=0,p=0;
-   string s=get_string();     
-    int n=strlen(s);
-    int number[n];
-    number[n]=0;
-    for(i=0;i<n;i++)
-        {number[i]=digit(s[i]);
-         }
-   for(i=0;i<n;i++)
-       {if(number[i]>=number[i+1])
-       p=p+number[i];
-       else if(number[i]<number[i+1])
-       p=p-number[i];
-      }
-    printf("%d",p);
-    return 0;
-}
-int digit(char c)
-{
-    int value = 0;
-    switch (c)
-    {
-    case 'I':
-        value = 1;
-        break;
-    case 'V':
-        value = 5;
-        break;
-    case 'X':
-        value = 10;
-        break;
-    case 'L':
-        value = 50;
-        break;
-    case 'C':
-        value = 100;
-        break;
-    case 'D':
-        value = 500;
-        break;
-    case 'M':
-        value = 1000;
-        break;    
-    }
-     return value;
-}`````
+Find the code in GitHub view in ###code section
