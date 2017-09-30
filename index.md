@@ -43,7 +43,7 @@ An integer representing the corresponding number in base 10.
 `9`
 ## Code:
 
-``#include <cs50.h>
+`````#include <cs50.h>
 #include <string.h>
 #include <stdio.h>
 int digit(char);
@@ -94,4 +94,4 @@ int digit(char c)
         break;    
     }
      return value;
-}``
+}`````
