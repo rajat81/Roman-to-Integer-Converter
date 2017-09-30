@@ -12,9 +12,9 @@ If symbols progress from largest to smallest left to right, their values are sim
 
 For example, if a user inputs:
 
-`IX, your program should print 9
+IX, your program should print 9
 MDCXXXVI, your program should print 1636
-XCIX, your program should print 99  `
+XCIX, your program should print 99  
 
 You may include additional header files as needed, and you may call any functions you’d like.
 
